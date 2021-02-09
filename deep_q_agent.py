@@ -5,7 +5,7 @@ from tensorflow import keras
 
 
 class DQNAgent:
-    def __init__(self, state_shape, action_size, epsilon, gamma, learning_rate):
+    def __init__(self, state_shape, action_size, epsilon, gamma, learning_rate, **kwargs):
         self.state_shape = state_shape
         self.action_size = action_size
         self.memory = deque(maxlen=2000)
